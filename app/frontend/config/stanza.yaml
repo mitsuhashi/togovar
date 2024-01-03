@@ -95,6 +95,32 @@ variant:
     - id: variant-transcript
       dom: "#variant-transcript"
 
+    - id: pagination-table
+      dom: "#variant-mogplus"
+      src: https://togostanza.github.io/metastanza/pagination-table.js
+      options:
+        data-url: ${TOGOVAR_STANZA_SPARQLIST}/api/variant_mogplus?tgv_id=${tgv_id}
+        data-type: json
+        custom-css-url: https://togostanza.github.io/togostanza-themes/contrib/togovar.css?20220803
+        padding: 0
+        page-size-option: 5,10,20,50,100
+        page-slider: false
+        columns:
+          - id: mouse_chromosome
+            label: chr(GRCm39)
+          - id: mouse_position
+            label: position(GRCm39)
+          - id: mouse_strand
+            label: strand(GRCm39)
+          - id: mouse_ref
+            label: ref(GRCm39)
+          - id: mouse_strains
+            label: mouse strains
+          - id: mouse_38_chromosome
+            label: chr(GRCm38)
+          - id: mouse_38_position
+            label: position(GRCm38)
+
     - id: variant-publication
       dom: "#variant-publication"
 
