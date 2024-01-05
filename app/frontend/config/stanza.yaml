@@ -106,6 +106,8 @@ variant:
         page-size-option: 5,10,20,50,100
         page-slider: false
         columns:
+          - id: hgvsp
+            label: human HGVSp
           - id: mouse_chromosome
             label: chr(GRCm39)
           - id: mouse_position
