@@ -232,6 +232,29 @@ gene:
             label: Replication sample description
             line-clamp: 3
 
+    - id: pagination-table
+      dom: "#gene-mogplus"
+      src: https://togostanza.github.io/metastanza/pagination-table.js
+      options:
+        data-url: ${TOGOVAR_STANZA_SPARQLIST}/api/gene_mogplus?hgnc_id=${hgnc_id}
+        data-type: json
+        custom-css-url: https://togostanza.github.io/togostanza-themes/contrib/togovar.css?20220803
+        padding: 0
+        page-size-option: 5,10,20,50,100
+        page-slider: false
+        columns:
+          - id: tgv_id
+            link: tgv_link
+            label: TogoVar ID
+          - id: consequence
+            label: consequence
+          - id: mogplus
+            link: mogplus_detail
+            label: link to MoG+
+          - id: mouse_strain
+            link: mogplus_table
+            label: Mouse strain
+
     - id: gene-genomic-context
       dom: '#gene-genomic-context'
       options:
