@@ -5,6 +5,9 @@ on:
     branches:
       - develop
 
+permissions:
+  contents: write
+
 jobs:
   deploy_grch38:
     runs-on: ubuntu-latest
