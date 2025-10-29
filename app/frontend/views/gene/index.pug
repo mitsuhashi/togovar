@@ -65,6 +65,14 @@ block content
           | Mouse variants in MoG+ database
       #gene-mogplus.stanza
 
+    section.stanza-view#orthologous-cis-regulatory-elements-between-human-and-mouse
+      .titlelink-wrapper
+        a.titlelink(href="#orthologous-cis-regulatory-elements-between-human-and-mouse")
+        h3.title
+          | Orthologous cis-regulatory elements between human and mouse
+        <script type="module" src="https://sparql-support.dbcls.jp/stanza-v3/gene-cre.js" async></script>
+        <togostanza-gene-cre hgnc_id="404"></togostanza-gene-cre>
+
     section.stanza-view#genomic-context
       .titlelink-wrapper
         a.titlelink(href="#genomic-context")

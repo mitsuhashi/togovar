@@ -286,6 +286,11 @@ gene:
             line-clamp: 1
             escape: false
 
+    - id: gene-orthologous-cis-regulatory-elements-between-human-and-mouse
+      dom: '#gene-orthologous-cis-regulatory-elements-between-human-and-mouse'
+      options:
+        hgnc_id: ${hgnc_id}
+
     - id: gene-genomic-context
       dom: '#gene-genomic-context'
       options:
