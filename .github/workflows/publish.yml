@@ -3,7 +3,10 @@ name: Publish GitHub Pages
 on:
   push:
     branches:
-      - staging
+      - develop
+
+permissions:
+  contents: write
 
 jobs:
   deploy_grch38:
